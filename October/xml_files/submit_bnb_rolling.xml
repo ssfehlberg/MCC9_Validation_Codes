@@ -3,7 +3,7 @@
 <!-- Production Project -->
 
 <!DOCTYPE project [
-<!ENTITY release      "v07_05_00_03" >
+<!ENTITY release      "v07_07_00_01" >
 <!ENTITY file_type    "data"      >
 <!ENTITY run_type     "physics"   >
 <!ENTITY name         "CCInclusive_Validation_MCC9">

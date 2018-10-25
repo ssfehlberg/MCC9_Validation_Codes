@@ -3,7 +3,7 @@
 <!-- Production Project -->
 
 <!DOCTYPE project [
-<!ENTITY release      "v07_05_00_02" >
+<!ENTITY release      "v07_07_00_01" >
 <!ENTITY file_type    "mc"      >
 <!ENTITY run_type     "physics"   >
 <!ENTITY name         "CCInclusive_Validation_MCC9">
@@ -37,10 +37,10 @@
       <inputdef>prodgenie_bnb_nu_cosmic_uboone_mcc9.0_pre_reco_1d_reco2</inputdef>
       <fcl>/uboone/app/users/sfehlber/MCC9_Validation_Codes/xml_files/calo_i.fcl</fcl> 
       <fcl>run_ubxsec_mc_bnbcosmic.fcl</fcl>      
-      <outdir>/pnfs/uboone/scratch/users/sfehlber/oct10</outdir>
-      <logdir>/pnfs/uboone/scratch/users/sfehlber/oct10</logdir>
+      <outdir>/pnfs/uboone/scratch/users/sfehlber/oct16/mc</outdir>
+      <logdir>/pnfs/uboone/scratch/users/sfehlber/oct16/mc</logdir>
       <workdir>/pnfs/uboone/resilient/users/sfehlber</workdir>
-      <numjobs>10</numjobs>
+      <numjobs>100</numjobs>
       <maxfilesperjob>10</maxfilesperjob> 
       <memory>3000</memory>
       <datatier>reco</datatier>
@@ -48,11 +48,12 @@
 
     <stage name="MC_MCC9_beta1">
       <inputdef>prodgenie_bnb_nu_cosmic_uboone_mcc9.0_beta1_reco_2d_dic_reco2</inputdef>
+      <fcl>/uboone/app/users/sfehlber/MCC9_Validation_Codes/October/xml_files/optfilter.fcl</fcl> 
       <fcl>run_ubxsec_mc_bnbcosmic.fcl</fcl>      
-      <outdir>/pnfs/uboone/scratch/users/sfehlber/oct10</outdir>
-      <logdir>/pnfs/uboone/scratch/users/sfehlber/oct10</logdir>
+      <outdir>/pnfs/uboone/scratch/users/sfehlber/oct16/mc</outdir>
+      <logdir>/pnfs/uboone/scratch/users/sfehlber/oct16/mc</logdir>
       <workdir>/pnfs/uboone/resilient/users/sfehlber</workdir>
-      <numjobs>10</numjobs>
+      <numjobs>100</numjobs>
       <maxfilesperjob>10</maxfilesperjob> 
       <memory>3000</memory>
       <datatier>reco</datatier>

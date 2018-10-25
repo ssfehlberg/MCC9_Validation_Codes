@@ -3,7 +3,7 @@
 <!-- Production Project -->
 
 <!DOCTYPE project [
-<!ENTITY release      "v07_05_00_02" >
+<!ENTITY release      "v07_07_01_01" >
 <!ENTITY file_type    "mc"      >
 <!ENTITY run_type     "physics"   >
 <!ENTITY name         "CCInclusive_Validation_MCC9">
@@ -35,10 +35,9 @@
     
     <stage name="bnb_preMCC9">
       <inputdef>data_bnb_run1_unblind_mcc9_pre_reco_1d_reco2</inputdef>
-      <fcl>/uboone/app/users/sfehlber/MCC9_Validation_Codes/xml_files/calo_i.fcl</fcl>
       <fcl>run_ubxsec_data_bnbon.fcl</fcl>      
-      <outdir>/pnfs/uboone/scratch/users/sfehlber/oct10/bnb</outdir>
-      <logdir>/pnfs/uboone/scratch/users/sfehlber/oct10/bnb</logdir>
+      <outdir>/pnfs/uboone/scratch/users/sfehlber/oct16/bnb</outdir>
+      <logdir>/pnfs/uboone/scratch/users/sfehlber/oct16/bnb</logdir>
       <workdir>/pnfs/uboone/resilient/users/sfehlber/</workdir>
       <numjobs>2877</numjobs>
       <maxfilesperjob>1</maxfilesperjob> 
@@ -49,11 +48,12 @@
 
     <stage name="bnb_MCC9_beta1_oct">
       <inputdef>data_bnb_run1_unblind_mcc9_beta1_reco_2d_reco2</inputdef>
-      <fcl>run_ubxsec_data_bnbon.fcl</fcl>      
-      <outdir>/pnfs/uboone/scratch/users/sfehlber/oct10/bnb</outdir>
-      <logdir>/pnfs/uboone/scratch/users/sfehlber/oct10/bnb</logdir>
+      <fcl>/uboone/app/users/sfehlber/MCC9_Validation_Codes/October/xml_files/optfilter.fcl</fcl> 
+      <!--fcl>run_ubxsec_data_bnbon.fcl</fcl-->      
+      <outdir>/pnfs/uboone/scratch/users/sfehlber/oct16/bnb</outdir>
+      <logdir>/pnfs/uboone/scratch/users/sfehlber/oct16/bnb</logdir>
       <workdir>/pnfs/uboone/resilient/users/sfehlber/</workdir>
-      <numjobs>3000</numjobs>
+      <numjobs>100</numjobs>
       <maxfilesperjob>1</maxfilesperjob> 
       <memory>3000</memory>
       <datatier>reco</datatier>

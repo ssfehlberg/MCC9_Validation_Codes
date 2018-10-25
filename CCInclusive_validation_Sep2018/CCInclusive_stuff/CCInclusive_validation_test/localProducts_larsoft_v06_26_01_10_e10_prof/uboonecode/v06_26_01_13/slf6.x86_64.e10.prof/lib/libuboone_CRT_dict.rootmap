@@ -1,0 +1,15 @@
+{ decls }
+namespace crt {  }
+namespace art {  }
+namespace crt { class CRTData; }
+namespace std {  }
+namespace art { template <typename T> class Wrapper; }
+
+[ libuboone_CRT_dict.so ]
+# List of selected classes
+class art::Wrapper<crt::CRTData>
+class art::Wrapper<std::vector<crt::CRTData> >
+class art::Wrapper<vector<crt::CRTData> >
+class crt::CRTData
+class vector<crt::CRTData>
+header CRTData.hh

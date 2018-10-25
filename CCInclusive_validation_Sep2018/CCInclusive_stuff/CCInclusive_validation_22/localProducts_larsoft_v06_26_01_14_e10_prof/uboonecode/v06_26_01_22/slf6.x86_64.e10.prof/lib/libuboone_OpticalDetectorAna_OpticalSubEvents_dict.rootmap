@@ -1,0 +1,22 @@
+{ decls }
+namespace subevent {  }
+namespace std {  }
+namespace art {  }
+namespace art { template <typename T> class Wrapper; }
+namespace subevent { class FlashList; }
+
+[ libuboone_OpticalDetectorAna_OpticalSubEvents_dict.so ]
+# List of selected classes
+class art::Wrapper<std::vector<subevent::SubEvent> >
+class art::Wrapper<subevent::FlashList>
+class art::Wrapper<vector<subevent::SubEvent> >
+class subevent::Flash
+class subevent::FlashList
+class subevent::SubEvent
+class subevent::SubEventList
+class vector<subevent::Flash>
+class vector<subevent::SubEvent>
+header uboone/OpticalDetectorAna/OpticalSubEvents/subevent_algo/Flash.hh
+header uboone/OpticalDetectorAna/OpticalSubEvents/subevent_algo/FlashList.hh
+header uboone/OpticalDetectorAna/OpticalSubEvents/subevent_algo/SubEvent.hh
+header uboone/OpticalDetectorAna/OpticalSubEvents/subevent_algo/SubEventList.hh

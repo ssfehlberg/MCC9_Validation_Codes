@@ -1,0 +1,13 @@
+FILE = version
+PRODUCT = ubana
+VERSION = v07_05_00_01
+
+FLAVOR = Linux64bit+2.6-2.12
+QUALIFIERS = e17:prof
+  DECLARER = CET
+  DECLARED = Mon Sep 17 10:17:41 CDT 2018
+  MODIFIER = CET
+  MODIFIED = Mon Sep 17 10:17:41 CDT 2018
+  PROD_DIR = ubana/v07_05_00_01
+  UPS_DIR = ups
+  TABLE_FILE = ubana.table

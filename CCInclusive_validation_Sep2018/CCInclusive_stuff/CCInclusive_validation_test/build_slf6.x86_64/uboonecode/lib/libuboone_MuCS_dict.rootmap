@@ -1,0 +1,29 @@
+{ decls }
+namespace MuCS {  }
+namespace std {  }
+namespace art {  }
+namespace MuCS { class MuCSDTOffset; }
+namespace art { template <typename T> class Wrapper; }
+namespace MuCS { class MuCSData; }
+namespace MuCS { class MuCSRecoData; }
+
+[ libuboone_MuCS_dict.so ]
+# List of selected classes
+class MuCS::MuCSDTOffset
+class MuCS::MuCSData
+class MuCS::MuCSRecoData
+class art::Wrapper<MuCS::MuCSDTOffset>
+class art::Wrapper<MuCS::MuCSData>
+class art::Wrapper<MuCS::MuCSRecoData>
+class art::Wrapper<std::vector<MuCS::MuCSDTOffset> >
+class art::Wrapper<std::vector<MuCS::MuCSData> >
+class art::Wrapper<std::vector<MuCS::MuCSRecoData> >
+class art::Wrapper<vector<MuCS::MuCSDTOffset> >
+class art::Wrapper<vector<MuCS::MuCSData> >
+class art::Wrapper<vector<MuCS::MuCSRecoData> >
+class vector<MuCS::MuCSDTOffset>
+class vector<MuCS::MuCSData>
+class vector<MuCS::MuCSRecoData>
+header MuCSDTOffset.h
+header MuCSData.h
+header MuCSRecoData.h

@@ -1,0 +1,167 @@
+File    = table
+Product = uboonecode
+
+#*************************************************
+# Starting Group definition
+Group:
+
+Flavor     = ANY
+Qualifiers = "e10:debug"
+
+
+  Action = GetFQDir
+    if ( printenv CET_SUBDIR > /dev/null )
+      envSet( ${UPS_PROD_NAME_UC}_FQ_DIR, ${${UPS_PROD_NAME_UC}_DIR}/${CET_SUBDIR}.e10.debug )
+    else()
+      envSet( ${UPS_PROD_NAME_UC}_FQ_DIR, ${${UPS_PROD_NAME_UC}_DIR}/`get-directory-name subdir`.e10.debug )
+    endif ( printenv CET_SUBDIR > /dev/null )
+    fileTest( ${${UPS_PROD_NAME_UC}_FQ_DIR}, -d, "${${UPS_PROD_NAME_UC}_FQ_DIR} directory not found: SETUP ABORTED")
+
+  Action = GetProducts
+    envSet( ${UPS_PROD_NAME_UC}_CXXFLAGS, "-g -gdwarf-4 -O0 -std=c++14" )
+    envSet( ${UPS_PROD_NAME_UC}_CFLAGS, "-g -gdwarf-4 -O0" )
+    setupRequired( larlite v06_26_01_01 -q +e10:+debug )
+    setupRequired( larcv v06_26_01_01 -q +e10:+debug )
+    setupRequired( swtrigger v02_02_03 -q +e10:+debug )
+    setupRequired( genie_xsec v2_12_0 -q +DefaultPlusMECWithNC )
+    setupRequired( larsoft v06_26_01_10 -q +e10:+debug )
+    setupRequired( artdaq_core v1_05_09_01 -q +e10:+nu:+s59:+debug )
+    setupRequired( artdaq_core v1_05_09_01 -q +e10:+nu:+s59:+debug )
+    setupRequired( gallery v1_03_13 -q +e10:+nu:+debug )
+    setupRequired( gallery v1_03_13 -q +e10:+nu:+debug )
+    setupRequired( ubutil v06_26_01_13 -q +e10:+debug )
+    setupRequired( uboonedata v01_17_00_04 )
+    setupRequired( uboonedaq_datatypes v6_19_01_e10 -q +e10:+debug )
+    setupRequired( uboone_example_data v01_00_00 )
+
+Flavor     = ANY
+Qualifiers = "e10:opt"
+
+
+  Action = GetFQDir
+    if ( printenv CET_SUBDIR > /dev/null )
+      envSet( ${UPS_PROD_NAME_UC}_FQ_DIR, ${${UPS_PROD_NAME_UC}_DIR}/${CET_SUBDIR}.e10.opt )
+    else()
+      envSet( ${UPS_PROD_NAME_UC}_FQ_DIR, ${${UPS_PROD_NAME_UC}_DIR}/`get-directory-name subdir`.e10.opt )
+    endif ( printenv CET_SUBDIR > /dev/null )
+    fileTest( ${${UPS_PROD_NAME_UC}_FQ_DIR}, -d, "${${UPS_PROD_NAME_UC}_FQ_DIR} directory not found: SETUP ABORTED")
+
+  Action = GetProducts
+    envSet( ${UPS_PROD_NAME_UC}_CXXFLAGS, "-g -gdwarf-4 -O3 -std=c++14" )
+    envSet( ${UPS_PROD_NAME_UC}_CFLAGS, "-g -gdwarf-4 -O3" )
+    setupRequired( larlite v06_26_01_01 -q +e10:+opt )
+    setupRequired( larcv v06_26_01_01 -q +e10:+opt )
+    setupRequired( swtrigger v02_02_03 -q +e10:+opt )
+    setupRequired( genie_xsec v2_12_0 -q +DefaultPlusMECWithNC )
+    setupRequired( larsoft v06_26_01_10 -q +e10:+opt )
+    setupRequired( artdaq_core v1_05_09_01 -q +e10:+nu:+s59:+opt )
+    setupRequired( artdaq_core v1_05_09_01 -q +e10:+nu:+s59:+opt )
+    setupRequired( gallery v1_03_13 -q +e10:+nu:+opt )
+    setupRequired( gallery v1_03_13 -q +e10:+nu:+opt )
+    setupRequired( ubutil v06_26_01_13 -q +e10:+opt )
+    setupRequired( uboonedata v01_17_00_04 )
+    setupRequired( uboonedaq_datatypes v6_19_01_e10 -q +e10:+opt )
+    setupRequired( uboone_example_data v01_00_00 )
+
+Flavor     = ANY
+Qualifiers = "e10:prof"
+
+
+  Action = GetFQDir
+    if ( printenv CET_SUBDIR > /dev/null )
+      envSet( ${UPS_PROD_NAME_UC}_FQ_DIR, ${${UPS_PROD_NAME_UC}_DIR}/${CET_SUBDIR}.e10.prof )
+    else()
+      envSet( ${UPS_PROD_NAME_UC}_FQ_DIR, ${${UPS_PROD_NAME_UC}_DIR}/`get-directory-name subdir`.e10.prof )
+    endif ( printenv CET_SUBDIR > /dev/null )
+    fileTest( ${${UPS_PROD_NAME_UC}_FQ_DIR}, -d, "${${UPS_PROD_NAME_UC}_FQ_DIR} directory not found: SETUP ABORTED")
+
+  Action = GetProducts
+    envSet( ${UPS_PROD_NAME_UC}_CXXFLAGS, "-g -gdwarf-4 -O3 -fno-omit-frame-pointer -std=c++14" )
+    envSet( ${UPS_PROD_NAME_UC}_CFLAGS, "-g -gdwarf-4 -O3 -fno-omit-frame-pointer" )
+    setupRequired( larlite v06_26_01_01 -q +e10:+prof )
+    setupRequired( larcv v06_26_01_01 -q +e10:+prof )
+    setupRequired( swtrigger v02_02_03 -q +e10:+prof )
+    setupRequired( genie_xsec v2_12_0 -q +DefaultPlusMECWithNC )
+    setupRequired( larsoft v06_26_01_10 -q +e10:+prof )
+    setupRequired( artdaq_core v1_05_09_01 -q +e10:+nu:+s59:+prof )
+    setupRequired( artdaq_core v1_05_09_01 -q +e10:+nu:+s59:+prof )
+    setupRequired( gallery v1_03_13 -q +e10:+nu:+prof )
+    setupRequired( gallery v1_03_13 -q +e10:+nu:+prof )
+    setupRequired( ubutil v06_26_01_13 -q +e10:+prof )
+    setupRequired( uboonedata v01_17_00_04 )
+    setupRequired( uboonedaq_datatypes v6_19_01_e10 -q +e10:+prof )
+    setupRequired( uboone_example_data v01_00_00 )
+
+Flavor     = ANY
+Qualifiers = "e10:fg:prof"
+
+
+  Action = GetFQDir
+    if ( printenv CET_SUBDIR > /dev/null )
+      envSet( ${UPS_PROD_NAME_UC}_FQ_DIR, ${${UPS_PROD_NAME_UC}_DIR}/${CET_SUBDIR}.e10.fg.prof )
+    else()
+      envSet( ${UPS_PROD_NAME_UC}_FQ_DIR, ${${UPS_PROD_NAME_UC}_DIR}/`get-directory-name subdir`.e10.fg.prof )
+    endif ( printenv CET_SUBDIR > /dev/null )
+    fileTest( ${${UPS_PROD_NAME_UC}_FQ_DIR}, -d, "${${UPS_PROD_NAME_UC}_FQ_DIR} directory not found: SETUP ABORTED")
+
+  Action = GetProducts
+    envSet( ${UPS_PROD_NAME_UC}_CXXFLAGS, "-g -gdwarf-4 -O3 -fno-omit-frame-pointer -std=c++14" )
+    envSet( ${UPS_PROD_NAME_UC}_CFLAGS, "-g -gdwarf-4 -O3 -fno-omit-frame-pointer" )
+    setupRequired( larlite v06_26_01_01 -q +e10:+prof )
+    setupRequired( larcv v06_26_01_01 -q +e10:+prof )
+    setupRequired( swtrigger v02_02_03 -q +e10:+prof )
+    setupRequired( genie_xsec v2_12_0 -q +LocalFGNievesQEAndMEC )
+    setupRequired( larsoft v06_26_01_10 -q +e10:+prof )
+    setupRequired( artdaq_core v1_05_09_01 -q +e10:+nu:+s59:+prof )
+    setupRequired( artdaq_core v1_05_09_01 -q +e10:+nu:+s59:+prof )
+    setupRequired( gallery v1_03_13 -q +e10:+nu:+prof )
+    setupRequired( gallery v1_03_13 -q +e10:+nu:+prof )
+    setupRequired( ubutil v06_26_01_13 -q +e10:+prof )
+    setupRequired( uboonedata v01_17_00_04 )
+    setupRequired( uboonedaq_datatypes v6_19_01_e10 -q +e10:+prof )
+    setupRequired( uboone_example_data v01_00_00 )
+
+
+Common:
+  Action = setup
+    prodDir()
+    setupEnv()
+    envSet(${UPS_PROD_NAME_UC}_VERSION, v06_26_01_13)
+    # cetpkgsupport has get-directory-name and find-path
+    # cetpkgsupport also defines the CET_SUBDIR variable
+    setupRequired(cetpkgsupport)
+    exeActionRequired(GetFQDir)
+    envSet(${UPS_PROD_NAME_UC}_INC, ${UPS_PROD_DIR}/include) 
+
+    exeActionRequired(GetProducts)
+
+    envSet(${UPS_PROD_NAME_UC}_LIB, ${${UPS_PROD_NAME_UC}_FQ_DIR}/lib) 
+    if ( test `uname` = "Darwin" )
+      pathPrepend(DYLD_LIBRARY_PATH, ${${UPS_PROD_NAME_UC}_LIB})
+    else()
+      pathPrepend(LD_LIBRARY_PATH, ${${UPS_PROD_NAME_UC}_LIB})
+    endif ( test `uname` = "Darwin" )
+
+    # add the bin directory to the path
+    pathPrepend(PATH, ${${UPS_PROD_NAME_UC}_FQ_DIR}/bin )
+    # dropit -E removes non-existent directories
+    Execute(dropit -E, NO_UPS_ENV, PATH)
+
+    # add the fcl directory to the path
+    pathPrepend(FHICL_FILE_PATH, ${UPS_PROD_DIR}/job )
+    # add ${UPS_PROD_DIR}/scripts to FW_SEARCH_PATH
+    pathPrepend(FW_SEARCH_PATH, ${UPS_PROD_DIR}/scripts )
+    # add ${UPS_PROD_DIR}/gdml directory to FW_SEARCH_PATH
+    pathPrepend(FW_SEARCH_PATH, ${UPS_PROD_DIR}/gdml )
+    # Prepend CMAKE_PREFIX_PATH for flavour qualified product
+    pathPrepend(CMAKE_PREFIX_PATH, ${${UPS_PROD_NAME_UC}_FQ_DIR})
+    pathPrepend(PKG_CONFIG_PATH, ${${UPS_PROD_NAME_UC}_FQ_DIR})
+    # Prepend ROOT_INCLUDE_PATH for dictionaries
+    pathPrepend(ROOT_INCLUDE_PATH, ${${UPS_PROD_NAME_UC}_INC}) 
+
+    pathPrepend(FW_SEARCH_PATH, ${UBOONECODE_DIR}/scripts)
+    pathPrepend(FW_SEARCH_PATH, ${UBOONECODE_DIR}/gdml)
+    pathPrepend(FHICL_FILE_PATH, .:./job)
+End:
+# End Group definition
+#*************************************************

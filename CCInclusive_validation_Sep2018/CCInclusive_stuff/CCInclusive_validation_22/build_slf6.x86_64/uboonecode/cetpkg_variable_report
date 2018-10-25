@@ -1,0 +1,13 @@
+
+CETPKG_NAME             uboonecode
+CETPKG_VERSION          v06_26_01_22
+CETPKG_DEFAULT_VERSION  none
+CETPKG_QUAL             e10:prof
+CETPKG_TYPE             Prof
+CETPKG_SOURCE           /uboone/app/users/sfehlber/CCInclusive_validation_22/srcs
+CETPKG_BUILD            /uboone/app/users/sfehlber/CCInclusive_validation_22/build_slf6.x86_64/uboonecode
+CETPKG_CC               gcc
+CETPKG_CXX              g++
+CETPKG_FC               gfortran
+CETPKG_ONLY_FOR_BUILD   cetbuildtools;
+to check cmake cached variables, use cmake -N -L

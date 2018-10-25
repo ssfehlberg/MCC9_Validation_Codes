@@ -1,0 +1,5 @@
+# DO NOT DELETE 
+# ubana package block
+set(ubana_not_in_ups true)
+include_directories ( ${CMAKE_CURRENT_SOURCE_DIR}/ubana )
+include_directories ( $ENV{MRB_BUILDDIR}/ubana )

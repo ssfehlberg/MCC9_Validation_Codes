@@ -1,0 +1,99 @@
+{ decls }
+namespace art {  }
+namespace anab { class FlashMatch; }
+namespace recob { class PFParticle; }
+namespace art { template <typename L, typename R, typename D> class Assns; }
+namespace art { template <typename T> class Wrapper; }
+namespace ubana {  }
+namespace ubana { class FlashMatch; }
+namespace std {  }
+namespace recob { class Track; }
+namespace ubana { class TPCObject; }
+namespace recob { class Shower; }
+namespace recob { class Vertex; }
+namespace anab { class CosmicTag; }
+namespace ubana { class MCGhost; }
+namespace simb { class MCParticle; }
+namespace ubana { class SelectionResult; }
+
+[ libuboone_UBXSec_DataTypes_dict.so ]
+# List of selected classes
+class UBXSecEvent
+class art::Assns<anab::CosmicTag,ubana::TPCObject,void>
+class art::Assns<anab::FlashMatch,recob::PFParticle,void>
+class art::Assns<recob::PFParticle,anab::FlashMatch,void>
+class art::Assns<recob::PFParticle,ubana::FlashMatch,void>
+class art::Assns<recob::PFParticle,ubana::MCGhost,void>
+class art::Assns<recob::PFParticle,ubana::TPCObject,void>
+class art::Assns<recob::Shower,ubana::TPCObject,void>
+class art::Assns<recob::Track,ubana::FlashMatch,void>
+class art::Assns<recob::Track,ubana::TPCObject,void>
+class art::Assns<recob::Vertex,ubana::TPCObject,void>
+class art::Assns<simb::MCParticle,ubana::MCGhost,void>
+class art::Assns<ubana::FlashMatch,recob::PFParticle,void>
+class art::Assns<ubana::FlashMatch,recob::Track,void>
+class art::Assns<ubana::FlashMatch,ubana::TPCObject,void>
+class art::Assns<ubana::MCGhost,recob::PFParticle,void>
+class art::Assns<ubana::MCGhost,simb::MCParticle,void>
+class art::Assns<ubana::SelectionResult,ubana::TPCObject,void>
+class art::Assns<ubana::TPCObject,anab::CosmicTag,void>
+class art::Assns<ubana::TPCObject,recob::PFParticle,void>
+class art::Assns<ubana::TPCObject,recob::Shower,void>
+class art::Assns<ubana::TPCObject,recob::Track,void>
+class art::Assns<ubana::TPCObject,recob::Vertex,void>
+class art::Assns<ubana::TPCObject,ubana::FlashMatch,void>
+class art::Assns<ubana::TPCObject,ubana::SelectionResult,void>
+class art::Wrapper<art::Assns<anab::CosmicTag,ubana::TPCObject,void> >
+class art::Wrapper<art::Assns<anab::FlashMatch,recob::PFParticle,void> >
+class art::Wrapper<art::Assns<recob::PFParticle,anab::FlashMatch,void> >
+class art::Wrapper<art::Assns<recob::PFParticle,ubana::FlashMatch,void> >
+class art::Wrapper<art::Assns<recob::PFParticle,ubana::MCGhost,void> >
+class art::Wrapper<art::Assns<recob::PFParticle,ubana::TPCObject,void> >
+class art::Wrapper<art::Assns<recob::Shower,ubana::TPCObject,void> >
+class art::Wrapper<art::Assns<recob::Track,ubana::FlashMatch,void> >
+class art::Wrapper<art::Assns<recob::Track,ubana::TPCObject,void> >
+class art::Wrapper<art::Assns<recob::Vertex,ubana::TPCObject,void> >
+class art::Wrapper<art::Assns<simb::MCParticle,ubana::MCGhost,void> >
+class art::Wrapper<art::Assns<ubana::FlashMatch,recob::PFParticle,void> >
+class art::Wrapper<art::Assns<ubana::FlashMatch,recob::Track,void> >
+class art::Wrapper<art::Assns<ubana::FlashMatch,ubana::TPCObject,void> >
+class art::Wrapper<art::Assns<ubana::MCGhost,recob::PFParticle,void> >
+class art::Wrapper<art::Assns<ubana::MCGhost,simb::MCParticle,void> >
+class art::Wrapper<art::Assns<ubana::SelectionResult,ubana::TPCObject,void> >
+class art::Wrapper<art::Assns<ubana::TPCObject,anab::CosmicTag,void> >
+class art::Wrapper<art::Assns<ubana::TPCObject,recob::PFParticle,void> >
+class art::Wrapper<art::Assns<ubana::TPCObject,recob::Shower,void> >
+class art::Wrapper<art::Assns<ubana::TPCObject,recob::Track,void> >
+class art::Wrapper<art::Assns<ubana::TPCObject,recob::Vertex,void> >
+class art::Wrapper<art::Assns<ubana::TPCObject,ubana::FlashMatch,void> >
+class art::Wrapper<art::Assns<ubana::TPCObject,ubana::SelectionResult,void> >
+class art::Wrapper<std::vector<ubana::FlashMatch> >
+class art::Wrapper<std::vector<ubana::MCGhost> >
+class art::Wrapper<std::vector<ubana::SelectionResult> >
+class art::Wrapper<std::vector<ubana::TPCObject> >
+class art::Wrapper<ubana::FlashMatch>
+class art::Wrapper<ubana::MCGhost>
+class art::Wrapper<ubana::SelectionResult>
+class art::Wrapper<ubana::TPCObject>
+class art::Wrapper<vector<ubana::FlashMatch> >
+class art::Wrapper<vector<ubana::MCGhost> >
+class art::Wrapper<vector<ubana::SelectionResult> >
+class art::Wrapper<vector<ubana::TPCObject> >
+class map<std::string,bool>
+class map<string,bool>
+class ubana::FlashMatch
+class ubana::MCGhost
+class ubana::SelectionResult
+class ubana::TPCObject
+class vector<ubana::FlashMatch>
+class vector<ubana::MCGhost>
+class vector<ubana::SelectionResult>
+class vector<ubana::TPCObject>
+header UBXSecEvent.h
+header FlashMatch.h
+header MCGhost.h
+header SelectionResult.h
+header TPCObject.h
+# List of selected enums and outer classes
+enum ubana::TPCObjectOrigin
+enum ubana::TPCObjectOriginExtra

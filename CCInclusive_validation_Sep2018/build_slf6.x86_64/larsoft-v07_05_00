@@ -1,0 +1,49 @@
+setenv UPS_OVERRIDE "-B"
+setenv CETPKG_NAME larsoft
+setenv CETPKG_VERSION v07_05_00
+setenv CETPKG_QUAL e17:prof
+setenv CETPKG_TYPE Prof
+setenv CETPKG_CC gcc
+setenv CETPKG_CXX g++
+setenv CETPKG_FC gfortran
+set_ setup_fail="false"
+setup -B cetbuildtools v7_04_00
+test "$?" = 0 || set_ setup_fail="true"
+test "$setup_fail" =  "true" && echo "ERROR: setup -B cetbuildtools v7_04_00 failed"
+test "$setup_fail" =  "true" && echo "ERROR: Please type \"unsetup cetbuildtools\" and \"unsetup cmake\""
+test "$setup_fail" =  "true" && return 1
+set_ setup_fail="false"
+setup -B cetpkgsupport 
+test "$?" = 0 || set_ setup_fail="true"
+test "$setup_fail" =  "true" && echo "ERROR: setup -B cetpkgsupport failed"
+test "$setup_fail" =  "true" && return 1
+# setup products
+# Configuring ubana
+set_ setup_fail="false"
+setup -B ubreco v07_05_00_01 -q +e17:+prof
+test "$?" = 0 || set_ setup_fail="true"
+test "$setup_fail" =  "true" && echo "ERROR: setup -B ubreco v07_05_00_01 -q +e17:+prof failed"
+test "$setup_fail" =  "true" && echo "ERROR: For more information, type \"ups depend ubreco v07_05_00_01 -q +e17:+prof\""
+test "$setup_fail" =  "true" && echo "                             or \"ups list -aK+ ubreco v07_05_00_01\""
+test "$setup_fail" =  "true" && return 1
+set_ setup_fail="false"
+setup -B ubraw v07_05_00_01 -q +e17:+prof
+test "$?" = 0 || set_ setup_fail="true"
+test "$setup_fail" =  "true" && echo "ERROR: setup -B ubraw v07_05_00_01 -q +e17:+prof failed"
+test "$setup_fail" =  "true" && echo "ERROR: For more information, type \"ups depend ubraw v07_05_00_01 -q +e17:+prof\""
+test "$setup_fail" =  "true" && echo "                             or \"ups list -aK+ ubraw v07_05_00_01\""
+test "$setup_fail" =  "true" && return 1
+set_ setup_fail="false"
+setup -B larana v07_01_01 -q +e17:+prof
+test "$?" = 0 || set_ setup_fail="true"
+test "$setup_fail" =  "true" && echo "ERROR: setup -B larana v07_01_01 -q +e17:+prof failed"
+test "$setup_fail" =  "true" && echo "ERROR: For more information, type \"ups depend larana v07_01_01 -q +e17:+prof\""
+test "$setup_fail" =  "true" && echo "                             or \"ups list -aK+ larana v07_01_01\""
+test "$setup_fail" =  "true" && return 1
+set_ setup_fail="false"
+setup -B larpandora v07_01_03 -q +e17:+prof
+test "$?" = 0 || set_ setup_fail="true"
+test "$setup_fail" =  "true" && echo "ERROR: setup -B larpandora v07_01_03 -q +e17:+prof failed"
+test "$setup_fail" =  "true" && echo "ERROR: For more information, type \"ups depend larpandora v07_01_03 -q +e17:+prof\""
+test "$setup_fail" =  "true" && echo "                             or \"ups list -aK+ larpandora v07_01_03\""
+test "$setup_fail" =  "true" && return 1

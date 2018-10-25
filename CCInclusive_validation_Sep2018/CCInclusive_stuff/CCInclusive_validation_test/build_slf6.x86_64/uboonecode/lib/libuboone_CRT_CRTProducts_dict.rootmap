@@ -1,0 +1,29 @@
+{ decls }
+namespace crt {  }
+namespace std {  }
+namespace art {  }
+namespace art { template <typename T> class Wrapper; }
+
+[ libuboone_CRT_CRTProducts_dict.so ]
+# List of selected classes
+class art::Wrapper<std::vector<crt::CRTHit> >
+class art::Wrapper<std::vector<crt::CRTSimData> >
+class art::Wrapper<std::vector<crt::CRTTrack> >
+class art::Wrapper<vector<crt::CRTHit> >
+class art::Wrapper<vector<crt::CRTSimData> >
+class art::Wrapper<vector<crt::CRTTrack> >
+class crt::CRTHit
+class crt::CRTSimData
+class crt::CRTTrack
+class map<uint8_t,uint16_t>
+class map<unsigned char,std::vector<std::pair<int,float> > >
+class map<unsigned char,unsigned short>
+class map<unsigned char,vector<pair<int,float> > >
+class vector<crt::CRTHit>
+class vector<crt::CRTSimData>
+class vector<crt::CRTTrack>
+class vector<pair<int,float> >
+class vector<std::pair<int,float> >
+header CRTHit.hh
+header CRTSimData.hh
+header CRTTrack.hh

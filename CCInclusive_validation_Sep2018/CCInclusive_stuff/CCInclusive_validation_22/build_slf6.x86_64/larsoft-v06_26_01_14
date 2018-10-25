@@ -1,0 +1,91 @@
+# UPS_OVERRIDE is already -B
+setenv CETPKG_NAME larsoft
+setenv CETPKG_VERSION v06_26_01_14
+setenv CETPKG_QUAL e10:prof
+setenv CETPKG_TYPE Prof
+setenv CETPKG_CC gcc
+setenv CETPKG_CXX g++
+setenv CETPKG_FC gfortran
+set_ setup_fail="false"
+setup -B cetbuildtools v7_03_03
+test "$?" = 0 || set_ setup_fail="true"
+test "$setup_fail" =  "true" && echo "ERROR: setup -B cetbuildtools v7_03_03 failed"
+test "$setup_fail" =  "true" && echo "ERROR: Please type \"unsetup cetbuildtools\" and \"unsetup cmake\""
+test "$setup_fail" =  "true" && return 1
+set_ setup_fail="false"
+setup -B cetpkgsupport 
+test "$?" = 0 || set_ setup_fail="true"
+test "$setup_fail" =  "true" && echo "ERROR: setup -B cetpkgsupport failed"
+test "$setup_fail" =  "true" && return 1
+# setup products
+# Configuring uboonecode
+set_ setup_fail="false"
+setup -B swtrigger v02_02_03 -q +e10:+prof
+test "$?" = 0 || set_ setup_fail="true"
+test "$setup_fail" =  "true" && echo "ERROR: setup -B swtrigger v02_02_03 -q +e10:+prof failed"
+test "$setup_fail" =  "true" && echo "ERROR: For more information, type \"ups depend swtrigger v02_02_03 -q +e10:+prof\""
+test "$setup_fail" =  "true" && echo "                             or \"ups list -aK+ swtrigger v02_02_03\""
+test "$setup_fail" =  "true" && return 1
+set_ setup_fail="false"
+setup -B larlite v06_26_01_01 -q +e10:+prof
+test "$?" = 0 || set_ setup_fail="true"
+test "$setup_fail" =  "true" && echo "ERROR: setup -B larlite v06_26_01_01 -q +e10:+prof failed"
+test "$setup_fail" =  "true" && echo "ERROR: For more information, type \"ups depend larlite v06_26_01_01 -q +e10:+prof\""
+test "$setup_fail" =  "true" && echo "                             or \"ups list -aK+ larlite v06_26_01_01\""
+test "$setup_fail" =  "true" && return 1
+set_ setup_fail="false"
+setup -B larcv v06_26_01_01 -q +e10:+prof
+test "$?" = 0 || set_ setup_fail="true"
+test "$setup_fail" =  "true" && echo "ERROR: setup -B larcv v06_26_01_01 -q +e10:+prof failed"
+test "$setup_fail" =  "true" && echo "ERROR: For more information, type \"ups depend larcv v06_26_01_01 -q +e10:+prof\""
+test "$setup_fail" =  "true" && echo "                             or \"ups list -aK+ larcv v06_26_01_01\""
+test "$setup_fail" =  "true" && return 1
+set_ setup_fail="false"
+setup -B genie_xsec v2_12_0 -q +DefaultPlusMECWithNC
+test "$?" = 0 || set_ setup_fail="true"
+test "$setup_fail" =  "true" && echo "ERROR: setup -B genie_xsec v2_12_0 -q +DefaultPlusMECWithNC failed"
+test "$setup_fail" =  "true" && echo "ERROR: For more information, type \"ups depend genie_xsec v2_12_0 -q +DefaultPlusMECWithNC\""
+test "$setup_fail" =  "true" && echo "                             or \"ups list -aK+ genie_xsec v2_12_0\""
+test "$setup_fail" =  "true" && return 1
+set_ setup_fail="false"
+setup -B larsoft v06_26_01_14 -q +e10:+prof
+test "$?" = 0 || set_ setup_fail="true"
+test "$setup_fail" =  "true" && echo "ERROR: setup -B larsoft v06_26_01_14 -q +e10:+prof failed"
+test "$setup_fail" =  "true" && echo "ERROR: For more information, type \"ups depend larsoft v06_26_01_14 -q +e10:+prof\""
+test "$setup_fail" =  "true" && echo "                             or \"ups list -aK+ larsoft v06_26_01_14\""
+test "$setup_fail" =  "true" && return 1
+set_ setup_fail="false"
+setup -B ubutil v06_26_01_21 -q +e10:+prof
+test "$?" = 0 || set_ setup_fail="true"
+test "$setup_fail" =  "true" && echo "ERROR: setup -B ubutil v06_26_01_21 -q +e10:+prof failed"
+test "$setup_fail" =  "true" && echo "ERROR: For more information, type \"ups depend ubutil v06_26_01_21 -q +e10:+prof\""
+test "$setup_fail" =  "true" && echo "                             or \"ups list -aK+ ubutil v06_26_01_21\""
+test "$setup_fail" =  "true" && return 1
+set_ setup_fail="false"
+setup -B uboonedata v01_17_00_07 
+test "$?" = 0 || set_ setup_fail="true"
+test "$setup_fail" =  "true" && echo "ERROR: setup -B uboonedata v01_17_00_07 failed"
+test "$setup_fail" =  "true" && echo "ERROR: For more information, type \"ups depend uboonedata v01_17_00_07\""
+test "$setup_fail" =  "true" && echo "                             or \"ups list -aK+ uboonedata v01_17_00_07\""
+test "$setup_fail" =  "true" && return 1
+set_ setup_fail="false"
+setup -B uboonedaq_datatypes v6_19_01_e10 -q +e10:+prof
+test "$?" = 0 || set_ setup_fail="true"
+test "$setup_fail" =  "true" && echo "ERROR: setup -B uboonedaq_datatypes v6_19_01_e10 -q +e10:+prof failed"
+test "$setup_fail" =  "true" && echo "ERROR: For more information, type \"ups depend uboonedaq_datatypes v6_19_01_e10 -q +e10:+prof\""
+test "$setup_fail" =  "true" && echo "                             or \"ups list -aK+ uboonedaq_datatypes v6_19_01_e10\""
+test "$setup_fail" =  "true" && return 1
+set_ setup_fail="false"
+setup -B gallery v1_03_13 -q +e10:+nu:+prof
+test "$?" = 0 || set_ setup_fail="true"
+test "$setup_fail" =  "true" && echo "ERROR: setup -B gallery v1_03_13 -q +e10:+nu:+prof failed"
+test "$setup_fail" =  "true" && echo "ERROR: For more information, type \"ups depend gallery v1_03_13 -q +e10:+nu:+prof\""
+test "$setup_fail" =  "true" && echo "                             or \"ups list -aK+ gallery v1_03_13\""
+test "$setup_fail" =  "true" && return 1
+set_ setup_fail="false"
+setup -B artdaq_core v1_05_09_01 -q +e10:+nu:+s59:+prof
+test "$?" = 0 || set_ setup_fail="true"
+test "$setup_fail" =  "true" && echo "ERROR: setup -B artdaq_core v1_05_09_01 -q +e10:+nu:+s59:+prof failed"
+test "$setup_fail" =  "true" && echo "ERROR: For more information, type \"ups depend artdaq_core v1_05_09_01 -q +e10:+nu:+s59:+prof\""
+test "$setup_fail" =  "true" && echo "                             or \"ups list -aK+ artdaq_core v1_05_09_01\""
+test "$setup_fail" =  "true" && return 1

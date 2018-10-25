@@ -1,0 +1,9 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/+uboonecode+job+eventweight_microboone_MB_MBRands.fcl"
+  "../../../job/eventweight_microboone_MB_MBRands.fcl"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang )
+  include(CMakeFiles/+uboonecode+job+eventweight_microboone_MB_MBRands.fcl.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

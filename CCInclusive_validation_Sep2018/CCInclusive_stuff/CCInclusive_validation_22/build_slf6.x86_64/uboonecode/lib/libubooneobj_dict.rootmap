@@ -1,0 +1,30 @@
+{ decls }
+namespace uboone {  }
+namespace art {  }
+namespace uboone { class UbooneOpticalFilter; }
+namespace raw {  }
+namespace lar {  }
+namespace lar { template <typename T> class sparse_vector; }
+namespace std {  }
+namespace art { template <typename T> class Wrapper; }
+namespace recob { class Wire; }
+namespace raw { class SparseRawDigit; }
+namespace art { template <typename L, typename R, typename D> class Assns; }
+
+[ libubooneobj_dict.so ]
+# List of selected classes
+class art::Assns<raw::SparseRawDigit,recob::Wire,void>
+class art::Assns<recob::Wire,raw::SparseRawDigit,void>
+class art::Wrapper<art::Assns<raw::SparseRawDigit,recob::Wire,void> >
+class art::Wrapper<art::Assns<recob::Wire,raw::SparseRawDigit,void> >
+class art::Wrapper<std::vector<raw::SparseRawDigit> >
+class art::Wrapper<uboone::UbooneOpticalFilter>
+class art::Wrapper<vector<raw::SparseRawDigit> >
+class lar::sparse_vector<short>
+class lar::sparse_vector<short>::datarange_t
+class raw::SparseRawDigit
+class uboone::UbooneOpticalFilter
+class vector<lar::sparse_vector<short>::datarange_t>
+class vector<raw::SparseRawDigit>
+header SparseRawDigit.h
+header UbooneOpticalFilter.h

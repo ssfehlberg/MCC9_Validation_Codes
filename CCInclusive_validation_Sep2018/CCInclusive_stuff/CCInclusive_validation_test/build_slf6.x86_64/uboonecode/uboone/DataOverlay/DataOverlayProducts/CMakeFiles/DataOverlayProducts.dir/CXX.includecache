@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cvmfs/larsoft.opensciencegrid.org/products/canvas/v1_05_02/include/canvas/Persistency/Provenance/Timestamp.h
+cstdint
+-
+
+/uboone/app/users/sfehlber/CCInclusive_validation_test/srcs/uboonecode/uboone/DataOverlay/DataOverlayProducts/EventMixingSummary.cxx
+EventMixingSummary.h
+/uboone/app/users/sfehlber/CCInclusive_validation_test/srcs/uboonecode/uboone/DataOverlay/DataOverlayProducts/EventMixingSummary.h
+
+/uboone/app/users/sfehlber/CCInclusive_validation_test/srcs/uboonecode/uboone/DataOverlay/DataOverlayProducts/EventMixingSummary.h
+stdint.h
+-
+canvas/Persistency/Provenance/Timestamp.h
+/uboone/app/users/sfehlber/CCInclusive_validation_test/srcs/uboonecode/uboone/DataOverlay/DataOverlayProducts/canvas/Persistency/Provenance/Timestamp.h
+

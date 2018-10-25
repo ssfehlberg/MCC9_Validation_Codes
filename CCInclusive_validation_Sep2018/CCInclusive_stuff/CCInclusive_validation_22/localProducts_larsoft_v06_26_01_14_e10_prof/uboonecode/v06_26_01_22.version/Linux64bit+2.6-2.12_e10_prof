@@ -1,0 +1,13 @@
+FILE = version
+PRODUCT = uboonecode
+VERSION = v06_26_01_22
+
+FLAVOR = Linux64bit+2.6-2.12
+QUALIFIERS = e10:prof
+  DECLARER = CET
+  DECLARED = Tue Aug 21 13:26:34 CDT 2018
+  MODIFIER = CET
+  MODIFIED = Tue Aug 21 13:26:34 CDT 2018
+  PROD_DIR = uboonecode/v06_26_01_22
+  UPS_DIR = ups
+  TABLE_FILE = uboonecode.table

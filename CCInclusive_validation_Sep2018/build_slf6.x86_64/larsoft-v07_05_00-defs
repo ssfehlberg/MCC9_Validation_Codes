@@ -1,0 +1,14 @@
+# unsetup products we are building
+unsetup -j ubana
+# set package variables
+setenv  UBANA_VERSION v07_05_00_01
+setenv  UBANA_DIR /uboone/app/users/sfehlber/CCInclusive_validation_Sep2018/srcs/ubana
+setenv  PATH `dropit -esf -p ${PATH} '/uboone/app/users/sfehlber/CCInclusive_validation_Sep2018/build_slf6.x86_64/ubana/bin'`
+setenv  LD_LIBRARY_PATH `dropit -esf -p ${LD_LIBRARY_PATH} '/uboone/app/users/sfehlber/CCInclusive_validation_Sep2018/build_slf6.x86_64/ubana/lib'`
+setenv CET_PLUGIN_PATH `dropit -esf -p ${CET_PLUGIN_PATH} '/uboone/app/users/sfehlber/CCInclusive_validation_Sep2018/build_slf6.x86_64/ubana/lib'`
+setenv  FHICL_FILE_PATH `dropit -esf -p ${FHICL_FILE_PATH} '/uboone/app/users/sfehlber/CCInclusive_validation_Sep2018/build_slf6.x86_64/ubana/job'`
+setenv  FW_SEARCH_PATH `dropit -esf -p ${FW_SEARCH_PATH} '/uboone/app/users/sfehlber/CCInclusive_validation_Sep2018/build_slf6.x86_64/ubana/scripts'`
+setenv  ROOT_INCLUDE_PATH `dropit -esf -p ${ROOT_INCLUDE_PATH} ${MRB_SOURCE}/ubana`
+setenv  ROOT_INCLUDE_PATH `dropit -esf -p ${ROOT_INCLUDE_PATH} /uboone/app/users/sfehlber/CCInclusive_validation_Sep2018/build_slf6.x86_64/ubana`
+setenv  UBANA_INC /uboone/app/users/sfehlber/CCInclusive_validation_Sep2018/srcs/ubana
+setenv  FHICL_FILE_PATH .:${FHICL_FILE_PATH}

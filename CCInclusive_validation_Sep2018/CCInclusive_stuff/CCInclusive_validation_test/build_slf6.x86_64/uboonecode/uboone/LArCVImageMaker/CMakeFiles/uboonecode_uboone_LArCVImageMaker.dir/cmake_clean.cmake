@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/uboonecode_uboone_LArCVImageMaker.dir/FMWKInterface.cxx.o"
+  "CMakeFiles/uboonecode_uboone_LArCVImageMaker.dir/ImageMetaFromConfig.cxx.o"
+  "CMakeFiles/uboonecode_uboone_LArCVImageMaker.dir/ImageMetaMaker.cxx.o"
+  "CMakeFiles/uboonecode_uboone_LArCVImageMaker.dir/ImageMetaMakerBase.cxx.o"
+  "CMakeFiles/uboonecode_uboone_LArCVImageMaker.dir/ImageMetaMakerFactory.cxx.o"
+  "CMakeFiles/uboonecode_uboone_LArCVImageMaker.dir/Instance2Image.cxx.o"
+  "CMakeFiles/uboonecode_uboone_LArCVImageMaker.dir/LAr2Image.cxx.o"
+  "CMakeFiles/uboonecode_uboone_LArCVImageMaker.dir/LArCVSuperaDriver.cxx.o"
+  "CMakeFiles/uboonecode_uboone_LArCVImageMaker.dir/LArFlowLAr2Image.cxx.o"
+  "CMakeFiles/uboonecode_uboone_LArCVImageMaker.dir/MCParticleTree.cxx.o"
+  "CMakeFiles/uboonecode_uboone_LArCVImageMaker.dir/MCROIMaker.cxx.o"
+  "CMakeFiles/uboonecode_uboone_LArCVImageMaker.dir/ParamsChStatus.cxx.o"
+  "CMakeFiles/uboonecode_uboone_LArCVImageMaker.dir/ParamsImage2D.cxx.o"
+  "CMakeFiles/uboonecode_uboone_LArCVImageMaker.dir/ParamsPixel2D.cxx.o"
+  "CMakeFiles/uboonecode_uboone_LArCVImageMaker.dir/ParamsROI.cxx.o"
+  "CMakeFiles/uboonecode_uboone_LArCVImageMaker.dir/ParamsVoxel3D.cxx.o"
+  "CMakeFiles/uboonecode_uboone_LArCVImageMaker.dir/PulledPork3DSlicer.cxx.o"
+  "CMakeFiles/uboonecode_uboone_LArCVImageMaker.dir/SuperaBase.cxx.o"
+  "CMakeFiles/uboonecode_uboone_LArCVImageMaker.dir/SuperaChStatus.cxx.o"
+  "CMakeFiles/uboonecode_uboone_LArCVImageMaker.dir/SuperaHit.cxx.o"
+  "CMakeFiles/uboonecode_uboone_LArCVImageMaker.dir/SuperaInstanceImage.cxx.o"
+  "CMakeFiles/uboonecode_uboone_LArCVImageMaker.dir/SuperaKeyPointCluster.cxx.o"
+  "CMakeFiles/uboonecode_uboone_LArCVImageMaker.dir/SuperaLArFlow.cxx.o"
+  "CMakeFiles/uboonecode_uboone_LArCVImageMaker.dir/SuperaMCPCluster.cxx.o"
+  "CMakeFiles/uboonecode_uboone_LArCVImageMaker.dir/SuperaMCROI.cxx.o"
+  "CMakeFiles/uboonecode_uboone_LArCVImageMaker.dir/SuperaMetaMaker.cxx.o"
+  "CMakeFiles/uboonecode_uboone_LArCVImageMaker.dir/SuperaOpDigit.cxx.o"
+  "CMakeFiles/uboonecode_uboone_LArCVImageMaker.dir/SuperaSimCh.cxx.o"
+  "CMakeFiles/uboonecode_uboone_LArCVImageMaker.dir/SuperaSimVoxel3D.cxx.o"
+  "CMakeFiles/uboonecode_uboone_LArCVImageMaker.dir/SuperaTypes.cxx.o"
+  "CMakeFiles/uboonecode_uboone_LArCVImageMaker.dir/SuperaWire.cxx.o"
+  "CMakeFiles/uboonecode_uboone_LArCVImageMaker.dir/WireRange3D.cxx.o"
+  "../../lib/libuboonecode_uboone_LArCVImageMaker.pdb"
+  "../../lib/libuboonecode_uboone_LArCVImageMaker.so"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/uboonecode_uboone_LArCVImageMaker.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

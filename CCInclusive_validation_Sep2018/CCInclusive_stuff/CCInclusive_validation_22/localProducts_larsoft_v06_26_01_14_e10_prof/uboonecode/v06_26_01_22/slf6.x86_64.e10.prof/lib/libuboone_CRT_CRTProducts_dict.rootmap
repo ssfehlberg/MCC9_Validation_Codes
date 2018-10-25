@@ -1,0 +1,41 @@
+{ decls }
+namespace crt {  }
+namespace std {  }
+namespace art {  }
+namespace art { template <typename T> class Wrapper; }
+namespace crt { class CRTTzero; }
+namespace crt { class CRTHit; }
+namespace art { template <typename L, typename R, typename D> class Assns; }
+
+[ libuboone_CRT_CRTProducts_dict.so ]
+# List of selected classes
+class art::Assns<crt::CRTHit,crt::CRTTzero,void>
+class art::Assns<crt::CRTTzero,crt::CRTHit,void>
+class art::Wrapper<art::Assns<crt::CRTHit,crt::CRTTzero,void> >
+class art::Wrapper<art::Assns<crt::CRTTzero,crt::CRTHit,void> >
+class art::Wrapper<std::vector<crt::CRTHit> >
+class art::Wrapper<std::vector<crt::CRTSimData> >
+class art::Wrapper<std::vector<crt::CRTTrack> >
+class art::Wrapper<std::vector<crt::CRTTzero> >
+class art::Wrapper<vector<crt::CRTHit> >
+class art::Wrapper<vector<crt::CRTSimData> >
+class art::Wrapper<vector<crt::CRTTrack> >
+class art::Wrapper<vector<crt::CRTTzero> >
+class crt::CRTHit
+class crt::CRTSimData
+class crt::CRTTrack
+class crt::CRTTzero
+class map<uint8_t,uint16_t>
+class map<unsigned char,std::vector<std::pair<int,float> > >
+class map<unsigned char,unsigned short>
+class map<unsigned char,vector<pair<int,float> > >
+class vector<crt::CRTHit>
+class vector<crt::CRTSimData>
+class vector<crt::CRTTrack>
+class vector<crt::CRTTzero>
+class vector<pair<int,float> >
+class vector<std::pair<int,float> >
+header CRTHit.hh
+header CRTSimData.hh
+header CRTTrack.hh
+header CRTTzero.hh

@@ -1,0 +1,10 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/uboone/app/users/sfehlber/CCInclusive_validation_test/srcs/uboonecode/uboone/CRT/CRTTriggerFilter_module.cc
+

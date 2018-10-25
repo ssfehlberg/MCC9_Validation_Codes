@@ -1,0 +1,20 @@
+{ decls }
+namespace raw {  }
+namespace art {  }
+namespace raw { class ubdaqSoftwareTriggerData; }
+namespace std {  }
+namespace raw { class DAQHeaderTimeUBooNE; }
+
+[ libuboone_RawData_utils_dict.so ]
+# List of selected classes
+class art::Wrapper<raw::DAQHeaderTimeUBooNE>
+class art::Wrapper<raw::ubdaqSoftwareTriggerData>
+class pair<std::string,bool>
+class pair<string,bool>
+class raw::DAQHeaderTimeUBooNE
+class raw::ubdaqSoftwareTriggerData
+class vector<bool>
+class vector<pair<string,bool> >
+class vector<std::pair<std::string,bool> >
+header uboone/RawData/utils/DAQHeaderTimeUBooNE.h
+header uboone/RawData/utils/ubdaqSoftwareTriggerData.h

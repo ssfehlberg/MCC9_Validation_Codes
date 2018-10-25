@@ -1,0 +1,15 @@
+{ decls }
+namespace evwgh {  }
+namespace std {  }
+namespace art {  }
+namespace evwgh { class MCEventWeight; }
+namespace art { template <typename T> class Wrapper; }
+
+[ libuboone_EventWeight_dict.so ]
+# List of selected classes
+class art::Wrapper<evwgh::MCEventWeight>
+class art::Wrapper<std::vector<evwgh::MCEventWeight> >
+class art::Wrapper<vector<evwgh::MCEventWeight> >
+class evwgh::MCEventWeight
+class vector<evwgh::MCEventWeight>
+header uboone/EventWeight/MCEventWeight.h

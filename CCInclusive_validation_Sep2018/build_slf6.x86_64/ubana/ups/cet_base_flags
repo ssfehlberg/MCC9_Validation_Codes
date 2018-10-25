@@ -1,0 +1,6 @@
+CET_BASE_CXX_FLAG_DEBUG: -g;-gdwarf-4;-O0;-std=c++17
+CET_BASE_CXX_FLAG_OPT:   -g;-gdwarf-4;-O3;-std=c++17
+CET_BASE_CXX_FLAG_PROF:  -g;-gdwarf-4;-O3;-fno-omit-frame-pointer;-std=c++17
+CET_BASE_C_FLAG_DEBUG:   -g;-gdwarf-4;-O0
+CET_BASE_C_FLAG_OPT:     -g;-gdwarf-4;-O3
+CET_BASE_C_FLAG_PROF:    -g;-gdwarf-4;-O3;-fno-omit-frame-pointer

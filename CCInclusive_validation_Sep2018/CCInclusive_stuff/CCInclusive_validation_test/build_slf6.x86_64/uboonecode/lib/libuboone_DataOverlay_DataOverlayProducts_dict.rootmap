@@ -1,0 +1,13 @@
+{ decls }
+namespace mix {  }
+namespace std {  }
+namespace art {  }
+namespace art { template <typename T> class Wrapper; }
+
+[ libuboone_DataOverlay_DataOverlayProducts_dict.so ]
+# List of selected classes
+class art::Wrapper<std::vector<mix::EventMixingSummary> >
+class art::Wrapper<vector<mix::EventMixingSummary> >
+class mix::EventMixingSummary
+class vector<mix::EventMixingSummary>
+header EventMixingSummary.h

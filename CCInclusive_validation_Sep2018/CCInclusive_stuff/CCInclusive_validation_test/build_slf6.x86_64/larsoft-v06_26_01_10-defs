@@ -1,0 +1,15 @@
+# unsetup products we are building
+unsetup -j uboonecode
+# set package variables
+setenv  UBOONECODE_VERSION v06_26_01_13
+setenv  UBOONECODE_DIR /uboone/app/users/sfehlber/CCInclusive_validation_test/srcs/uboonecode
+setenv  PATH `dropit -esf -p ${PATH} '/uboone/app/users/sfehlber/CCInclusive_validation_test/build_slf6.x86_64/uboonecode/bin'`
+setenv  LD_LIBRARY_PATH `dropit -esf -p ${LD_LIBRARY_PATH} '/uboone/app/users/sfehlber/CCInclusive_validation_test/build_slf6.x86_64/uboonecode/lib'`
+setenv CET_PLUGIN_PATH '/uboone/app/users/sfehlber/CCInclusive_validation_test/build_slf6.x86_64/uboonecode/lib'
+setenv  FHICL_FILE_PATH `dropit -esf -p ${FHICL_FILE_PATH} '/uboone/app/users/sfehlber/CCInclusive_validation_test/build_slf6.x86_64/uboonecode/job'`
+setenv  FW_SEARCH_PATH `dropit -esf -p ${FW_SEARCH_PATH} '/uboone/app/users/sfehlber/CCInclusive_validation_test/build_slf6.x86_64/uboonecode/gdml'`
+setenv  FW_SEARCH_PATH `dropit -esf -p ${FW_SEARCH_PATH} '/uboone/app/users/sfehlber/CCInclusive_validation_test/build_slf6.x86_64/uboonecode/scripts'`
+setenv  ROOT_INCLUDE_PATH `dropit -esf -p ${ROOT_INCLUDE_PATH} ${MRB_SOURCE}/uboonecode`
+setenv  ROOT_INCLUDE_PATH `dropit -esf -p ${ROOT_INCLUDE_PATH} /uboone/app/users/sfehlber/CCInclusive_validation_test/build_slf6.x86_64/uboonecode`
+setenv  UBOONECODE_INC /uboone/app/users/sfehlber/CCInclusive_validation_test/srcs/uboonecode
+setenv  FHICL_FILE_PATH .:${FHICL_FILE_PATH}

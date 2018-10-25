@@ -1,0 +1,210 @@
+File    = table
+Product = ubana
+
+#*************************************************
+# Starting Group definition
+Group:
+
+Flavor     = ANY
+Qualifiers = "c2:debug"
+
+
+  Action = GetFQDir
+    if ( printenv CET_SUBDIR > /dev/null )
+      envSet( ${UPS_PROD_NAME_UC}_FQ_DIR, ${${UPS_PROD_NAME_UC}_DIR}/${CET_SUBDIR}.c2.debug )
+    else()
+      envSet( ${UPS_PROD_NAME_UC}_FQ_DIR, ${${UPS_PROD_NAME_UC}_DIR}/`get-directory-name subdir`.c2.debug )
+    endif ( printenv CET_SUBDIR > /dev/null )
+    fileTest( ${${UPS_PROD_NAME_UC}_FQ_DIR}, -d, "${${UPS_PROD_NAME_UC}_FQ_DIR} directory not found: SETUP ABORTED")
+
+  Action = GetProducts
+    setupRequired( ubreco v07_05_00_01 -q +c2:+debug )
+    setupRequired( ubraw v07_05_00_01 -q +c2:+debug )
+    setupRequired( larana v07_01_01 -q +c2:+debug )
+    setupRequired( larpandora v07_01_03 -q +c2:+debug )
+
+Flavor     = ANY
+Qualifiers = "c2:opt"
+
+
+  Action = GetFQDir
+    if ( printenv CET_SUBDIR > /dev/null )
+      envSet( ${UPS_PROD_NAME_UC}_FQ_DIR, ${${UPS_PROD_NAME_UC}_DIR}/${CET_SUBDIR}.c2.opt )
+    else()
+      envSet( ${UPS_PROD_NAME_UC}_FQ_DIR, ${${UPS_PROD_NAME_UC}_DIR}/`get-directory-name subdir`.c2.opt )
+    endif ( printenv CET_SUBDIR > /dev/null )
+    fileTest( ${${UPS_PROD_NAME_UC}_FQ_DIR}, -d, "${${UPS_PROD_NAME_UC}_FQ_DIR} directory not found: SETUP ABORTED")
+
+  Action = GetProducts
+    setupRequired( ubreco v07_05_00_01 -q +c2:+opt )
+    setupRequired( ubraw v07_05_00_01 -q +c2:+opt )
+    setupRequired( larana v07_01_01 -q +c2:+opt )
+    setupRequired( larpandora v07_01_03 -q +c2:+opt )
+
+Flavor     = ANY
+Qualifiers = "c2:prof"
+
+
+  Action = GetFQDir
+    if ( printenv CET_SUBDIR > /dev/null )
+      envSet( ${UPS_PROD_NAME_UC}_FQ_DIR, ${${UPS_PROD_NAME_UC}_DIR}/${CET_SUBDIR}.c2.prof )
+    else()
+      envSet( ${UPS_PROD_NAME_UC}_FQ_DIR, ${${UPS_PROD_NAME_UC}_DIR}/`get-directory-name subdir`.c2.prof )
+    endif ( printenv CET_SUBDIR > /dev/null )
+    fileTest( ${${UPS_PROD_NAME_UC}_FQ_DIR}, -d, "${${UPS_PROD_NAME_UC}_FQ_DIR} directory not found: SETUP ABORTED")
+
+  Action = GetProducts
+    setupRequired( ubreco v07_05_00_01 -q +c2:+prof )
+    setupRequired( ubraw v07_05_00_01 -q +c2:+prof )
+    setupRequired( larana v07_01_01 -q +c2:+prof )
+    setupRequired( larpandora v07_01_03 -q +c2:+prof )
+
+Flavor     = ANY
+Qualifiers = "e15:debug"
+
+
+  Action = GetFQDir
+    if ( printenv CET_SUBDIR > /dev/null )
+      envSet( ${UPS_PROD_NAME_UC}_FQ_DIR, ${${UPS_PROD_NAME_UC}_DIR}/${CET_SUBDIR}.e15.debug )
+    else()
+      envSet( ${UPS_PROD_NAME_UC}_FQ_DIR, ${${UPS_PROD_NAME_UC}_DIR}/`get-directory-name subdir`.e15.debug )
+    endif ( printenv CET_SUBDIR > /dev/null )
+    fileTest( ${${UPS_PROD_NAME_UC}_FQ_DIR}, -d, "${${UPS_PROD_NAME_UC}_FQ_DIR} directory not found: SETUP ABORTED")
+
+  Action = GetProducts
+    setupRequired( ubreco v07_05_00_01 -q +e15:+debug )
+    setupRequired( ubraw v07_05_00_01 -q +e15:+debug )
+    setupRequired( larana v07_01_01 -q +e15:+debug )
+    setupRequired( larpandora v07_01_03 -q +e15:+debug )
+
+Flavor     = ANY
+Qualifiers = "e15:opt"
+
+
+  Action = GetFQDir
+    if ( printenv CET_SUBDIR > /dev/null )
+      envSet( ${UPS_PROD_NAME_UC}_FQ_DIR, ${${UPS_PROD_NAME_UC}_DIR}/${CET_SUBDIR}.e15.opt )
+    else()
+      envSet( ${UPS_PROD_NAME_UC}_FQ_DIR, ${${UPS_PROD_NAME_UC}_DIR}/`get-directory-name subdir`.e15.opt )
+    endif ( printenv CET_SUBDIR > /dev/null )
+    fileTest( ${${UPS_PROD_NAME_UC}_FQ_DIR}, -d, "${${UPS_PROD_NAME_UC}_FQ_DIR} directory not found: SETUP ABORTED")
+
+  Action = GetProducts
+    setupRequired( ubreco v07_05_00_01 -q +e15:+opt )
+    setupRequired( ubraw v07_05_00_01 -q +e15:+opt )
+    setupRequired( larana v07_01_01 -q +e15:+opt )
+    setupRequired( larpandora v07_01_03 -q +e15:+opt )
+
+Flavor     = ANY
+Qualifiers = "e15:prof"
+
+
+  Action = GetFQDir
+    if ( printenv CET_SUBDIR > /dev/null )
+      envSet( ${UPS_PROD_NAME_UC}_FQ_DIR, ${${UPS_PROD_NAME_UC}_DIR}/${CET_SUBDIR}.e15.prof )
+    else()
+      envSet( ${UPS_PROD_NAME_UC}_FQ_DIR, ${${UPS_PROD_NAME_UC}_DIR}/`get-directory-name subdir`.e15.prof )
+    endif ( printenv CET_SUBDIR > /dev/null )
+    fileTest( ${${UPS_PROD_NAME_UC}_FQ_DIR}, -d, "${${UPS_PROD_NAME_UC}_FQ_DIR} directory not found: SETUP ABORTED")
+
+  Action = GetProducts
+    setupRequired( ubreco v07_05_00_01 -q +e15:+prof )
+    setupRequired( ubraw v07_05_00_01 -q +e15:+prof )
+    setupRequired( larana v07_01_01 -q +e15:+prof )
+    setupRequired( larpandora v07_01_03 -q +e15:+prof )
+
+Flavor     = ANY
+Qualifiers = "e17:debug"
+
+
+  Action = GetFQDir
+    if ( printenv CET_SUBDIR > /dev/null )
+      envSet( ${UPS_PROD_NAME_UC}_FQ_DIR, ${${UPS_PROD_NAME_UC}_DIR}/${CET_SUBDIR}.e17.debug )
+    else()
+      envSet( ${UPS_PROD_NAME_UC}_FQ_DIR, ${${UPS_PROD_NAME_UC}_DIR}/`get-directory-name subdir`.e17.debug )
+    endif ( printenv CET_SUBDIR > /dev/null )
+    fileTest( ${${UPS_PROD_NAME_UC}_FQ_DIR}, -d, "${${UPS_PROD_NAME_UC}_FQ_DIR} directory not found: SETUP ABORTED")
+
+  Action = GetProducts
+    setupRequired( ubreco v07_05_00_01 -q +e17:+debug )
+    setupRequired( ubraw v07_05_00_01 -q +e17:+debug )
+    setupRequired( larana v07_01_01 -q +e17:+debug )
+    setupRequired( larpandora v07_01_03 -q +e17:+debug )
+
+Flavor     = ANY
+Qualifiers = "e17:opt"
+
+
+  Action = GetFQDir
+    if ( printenv CET_SUBDIR > /dev/null )
+      envSet( ${UPS_PROD_NAME_UC}_FQ_DIR, ${${UPS_PROD_NAME_UC}_DIR}/${CET_SUBDIR}.e17.opt )
+    else()
+      envSet( ${UPS_PROD_NAME_UC}_FQ_DIR, ${${UPS_PROD_NAME_UC}_DIR}/`get-directory-name subdir`.e17.opt )
+    endif ( printenv CET_SUBDIR > /dev/null )
+    fileTest( ${${UPS_PROD_NAME_UC}_FQ_DIR}, -d, "${${UPS_PROD_NAME_UC}_FQ_DIR} directory not found: SETUP ABORTED")
+
+  Action = GetProducts
+    setupRequired( ubreco v07_05_00_01 -q +e17:+opt )
+    setupRequired( ubraw v07_05_00_01 -q +e17:+opt )
+    setupRequired( larana v07_01_01 -q +e17:+opt )
+    setupRequired( larpandora v07_01_03 -q +e17:+opt )
+
+Flavor     = ANY
+Qualifiers = "e17:prof"
+
+
+  Action = GetFQDir
+    if ( printenv CET_SUBDIR > /dev/null )
+      envSet( ${UPS_PROD_NAME_UC}_FQ_DIR, ${${UPS_PROD_NAME_UC}_DIR}/${CET_SUBDIR}.e17.prof )
+    else()
+      envSet( ${UPS_PROD_NAME_UC}_FQ_DIR, ${${UPS_PROD_NAME_UC}_DIR}/`get-directory-name subdir`.e17.prof )
+    endif ( printenv CET_SUBDIR > /dev/null )
+    fileTest( ${${UPS_PROD_NAME_UC}_FQ_DIR}, -d, "${${UPS_PROD_NAME_UC}_FQ_DIR} directory not found: SETUP ABORTED")
+
+  Action = GetProducts
+    setupRequired( ubreco v07_05_00_01 -q +e17:+prof )
+    setupRequired( ubraw v07_05_00_01 -q +e17:+prof )
+    setupRequired( larana v07_01_01 -q +e17:+prof )
+    setupRequired( larpandora v07_01_03 -q +e17:+prof )
+
+
+Common:
+  Action = setup
+    prodDir()
+    setupEnv()
+    envSet(${UPS_PROD_NAME_UC}_VERSION, v07_05_00_01)
+    # cetpkgsupport has get-directory-name and find-path
+    # cetpkgsupport also defines the CET_SUBDIR variable
+    setupRequired(cetpkgsupport)
+    exeActionRequired(GetFQDir)
+    envSet(${UPS_PROD_NAME_UC}_INC, ${UPS_PROD_DIR}/include) 
+
+    exeActionRequired(GetProducts)
+
+    envSet(${UPS_PROD_NAME_UC}_LIB, ${${UPS_PROD_NAME_UC}_FQ_DIR}/lib) 
+    if ( test `uname` = "Darwin" )
+      pathPrepend(DYLD_LIBRARY_PATH, ${${UPS_PROD_NAME_UC}_LIB})
+    else()
+      pathPrepend(LD_LIBRARY_PATH, ${${UPS_PROD_NAME_UC}_LIB})
+    endif ( test `uname` = "Darwin" )
+    pathPrepend(CET_PLUGIN_PATH, ${${UPS_PROD_NAME_UC}_LIB})
+
+    # add the bin directory to the path
+    pathPrepend(PATH, ${${UPS_PROD_NAME_UC}_FQ_DIR}/bin )
+    # dropit -E removes non-existent directories
+    Execute(dropit -E, NO_UPS_ENV, PATH)
+
+    # add the fcl directory to the path
+    pathPrepend(FHICL_FILE_PATH, ${UPS_PROD_DIR}/job )
+    # add ${UPS_PROD_DIR}/scripts to FW_SEARCH_PATH
+    pathPrepend(FW_SEARCH_PATH, ${UPS_PROD_DIR}/scripts )
+    # Prepend CMAKE_PREFIX_PATH for flavour qualified product
+    pathPrepend(CMAKE_PREFIX_PATH, ${${UPS_PROD_NAME_UC}_FQ_DIR})
+    pathPrepend(PKG_CONFIG_PATH, ${${UPS_PROD_NAME_UC}_FQ_DIR})
+    # Prepend ROOT_INCLUDE_PATH for dictionaries
+    pathPrepend(ROOT_INCLUDE_PATH, ${${UPS_PROD_NAME_UC}_INC}) 
+
+pathPrepend(FW_SEARCH_PATH, ${UBANA_DIR}/scripts)
+End:
+# End Group definition
+#*************************************************

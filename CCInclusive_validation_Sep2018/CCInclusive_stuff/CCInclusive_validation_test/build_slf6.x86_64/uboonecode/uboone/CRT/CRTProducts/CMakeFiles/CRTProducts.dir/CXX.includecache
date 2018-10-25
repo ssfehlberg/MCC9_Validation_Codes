@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/uboone/app/users/sfehlber/CCInclusive_validation_test/srcs/uboonecode/uboone/CRT/CRTProducts/CRTHit.cc
+uboone/CRT/CRTProducts/CRTHit.hh
+/uboone/app/users/sfehlber/CCInclusive_validation_test/srcs/uboonecode/uboone/CRT/CRTProducts/uboone/CRT/CRTProducts/CRTHit.hh
+
+/uboone/app/users/sfehlber/CCInclusive_validation_test/srcs/uboonecode/uboone/CRT/CRTProducts/CRTHit.hh
+cstdint
+-
+vector
+-
+map
+-
+
+/uboone/app/users/sfehlber/CCInclusive_validation_test/srcs/uboonecode/uboone/CRT/CRTProducts/CRTSimData.cc
+uboone/CRT/CRTProducts/CRTSimData.hh
+/uboone/app/users/sfehlber/CCInclusive_validation_test/srcs/uboonecode/uboone/CRT/CRTProducts/uboone/CRT/CRTProducts/CRTSimData.hh
+
+/uboone/app/users/sfehlber/CCInclusive_validation_test/srcs/uboonecode/uboone/CRT/CRTProducts/CRTSimData.hh
+cstdint
+-
+
+/uboone/app/users/sfehlber/CCInclusive_validation_test/srcs/uboonecode/uboone/CRT/CRTProducts/CRTTrack.cc
+uboone/CRT/CRTProducts/CRTTrack.hh
+/uboone/app/users/sfehlber/CCInclusive_validation_test/srcs/uboonecode/uboone/CRT/CRTProducts/uboone/CRT/CRTProducts/CRTTrack.hh
+
+/uboone/app/users/sfehlber/CCInclusive_validation_test/srcs/uboonecode/uboone/CRT/CRTProducts/CRTTrack.hh
+cstdint
+-
+vector
+-
+map
+-
+
